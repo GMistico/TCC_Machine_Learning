@@ -1,0 +1,28 @@
+# Necessary imports for this project
+import os
+
+import numpy as np
+import pandas as pd
+
+import datetime
+import time
+
+import random
+
+# For plotting
+%matplotlib inline
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set_style('darkgrid', {'axes.facecolor': '0.9'})
+
+#-----------------
+
+from google.colab import drive
+
+drive.mount('/content/drive', force_remount=True)
+
+base_transacoes = pd.read_csv(r"/content/drive/My Drive/TCC/base_transacoes_alterada_oficial.csv")
+base_transacoes['horario_transacao'] = pd.to_datetime(base_transacoes['horario_transacao'], format='%Y-%m-%d %H:%M:%S')
+base_transacoes.head()
