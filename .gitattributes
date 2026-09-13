@@ -1,0 +1,16 @@
+# Normaliza fim de linha: texto sempre LF no repositório, checkout nativo no SO
+# (evita "arquivos modificados" fantasmas ao alternar entre Git do Windows e do WSL).
+* text=auto
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.xlsx binary
+*.docx binary
+*.pptx binary
+*.glb binary
+*.blend binary
+*.mp3 binary
+*.ogg binary
+*.wav binary
+*.exe binary
